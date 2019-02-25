@@ -1,0 +1,76 @@
+body{
+    font-size: 14px;
+    font-family: $openSans;
+    h2{
+        font-family: $openSans;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 32px;
+        color: #2e2e2e;
+    }
+    p{
+        font-family: $openSans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #626262;
+    }
+    h3{
+        font-family: $dosis;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #232323;
+    }
+}
+/*main buttons*/
+.button-from-left, .button-from-top{
+    padding: 10px 30px;
+    background: $mainColor;
+    border: 1px solid $mainColor;
+    position: relative;
+    transition: all .4s;
+    border-radius: 2px;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 100%;
+        border: 1px solid $mainColor;
+        background: white;
+        opacity: 0;
+        transition: all .5s;
+        border-radius: 2px;
+    }
+    a{
+        position: relative;
+        text-decoration: none;
+        font-family: $dosis;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 2px;
+        z-index: 1;
+    }
+    &:hover{
+        .overlay{
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+        a{
+            color: $mainColor;
+        }
+    }
+}
+.button-from-top{
+    .overlay{
+        right: 0;
+        bottom: 100%;
+    }
+    &:hover{
+        .overlay{
+            bottom: 0;
+        }
+    }
+}

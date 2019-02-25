@@ -1,0 +1,225 @@
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+body h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #2e2e2e;
+}
+body p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #626262;
+}
+body h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #232323;
+}
+
+/*main buttons*/
+.button-from-left, .button-from-top {
+  padding: 10px 30px;
+  background: #00c9b1;
+  border: 1px solid #00c9b1;
+  position: relative;
+  transition: all .4s;
+  border-radius: 2px;
+}
+.button-from-left .overlay, .button-from-top .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 100%;
+  border: 1px solid #00c9b1;
+  background: white;
+  opacity: 0;
+  transition: all .5s;
+  border-radius: 2px;
+}
+.button-from-left a, .button-from-top a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+.button-from-left:hover .overlay, .button-from-top:hover .overlay {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.button-from-left:hover a, .button-from-top:hover a {
+  color: #00c9b1;
+}
+
+.button-from-top .overlay {
+  right: 0;
+  bottom: 100%;
+}
+.button-from-top:hover .overlay {
+  bottom: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
+  z-index: 9999999999999;
+}
+header .container-fluid .container .row {
+  /*Costumized default bootstrap nav*/
+}
+header .container-fluid .container .row .logo a {
+  font-size: 30px;
+  color: #232323;
+  text-decoration: none;
+  font-weight: 600;
+}
+header .container-fluid .container .row .logo a:hover {
+  color: #232323;
+}
+header .container-fluid .container .row .logo span {
+  font-size: 30px;
+  color: #00c9b1;
+  margin-left: -5px;
+}
+header .container-fluid .container .row .large-screen-nav a {
+  padding: 25px 5px;
+  font-size: 15px;
+  color: #232323;
+  transition: all .4s;
+  position: relative;
+  letter-spacing: 1px;
+}
+header .container-fluid .container .row .large-screen-nav a::after {
+  content: "";
+  width: 0px;
+  background: #00c9b1;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all .4s;
+}
+header .container-fluid .container .row .large-screen-nav a:hover {
+  color: #00c9b1;
+}
+header .container-fluid .container .row .large-screen-nav a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  header .large-screen-nav {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  header .small-screen-nav {
+    display: none;
+  }
+}
+#slider {
+  padding: 40px 0;
+  background: url(../img/1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#slider .container-fluid .container .row p {
+  margin: 0;
+}
+#slider .container-fluid .container .row p:first-child {
+  font-weight: 600;
+  color: #212529;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+#slider .container-fluid .container .row p:last-child {
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+#slider .container-fluid .container .row h2 {
+  font-size: 40px;
+}
+#slider .container-fluid .container .row h2:nth-of-type(2) {
+  color: #00c9b1;
+}
+#slider .container-fluid .container .scroll {
+  width: 30px;
+  height: 55px;
+  border: 2px solid #00c9b1;
+  border-radius: 36%;
+  position: relative;
+  padding: 7px;
+}
+#slider .container-fluid .container .scroll .scroll-btn {
+  border-radius: 100%;
+  background: #00c9b1;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 2.5s infinite;
+}
+@keyframes scroll {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 75%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+@media (max-width: 767.98px) {
+  #slider .row {
+    justify-content: center;
+  }
+  #slider .row h2 {
+    font-size: 30px !important;
+  }
+  #slider .row .button-from-top {
+    display: none;
+  }
+}
+#feature {
+  padding: 80px 0;
+}
+#feature .container-fluid .container .content-row p {
+  letter-spacing: 1px;
+}
+#feature .container-fluid .container .content-row p::before {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: #00c9b1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+#feature .container-fluid .container .content-row p::after {
+  content: "";
+  height: 13px;
+  width: 13px;
+  background: #00c9b1;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+}
