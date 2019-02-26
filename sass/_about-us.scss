@@ -1,0 +1,29 @@
+#about-us{
+    padding: 100px 0;
+    background: #f6f6f6;
+    .container-fluid{
+        .container{
+            .row{
+                strong{
+                    color: #626262;
+                }
+                .icons-content{
+                    p{
+                        display: inline;
+                        letter-spacing: 1px;
+                    }
+                    i{
+                        background: $mainColor;
+                        color: #f6f6f6;
+                        font-size: 22px;
+                        height: 45px;
+                        line-height: 45px;
+                        text-align: center;
+                        width: 45px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

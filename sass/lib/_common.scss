@@ -1,6 +1,9 @@
 body{
     font-size: 14px;
     font-family: $openSans;
+    .container{
+        max-width: 1200px !important;
+    }
     h2{
         font-family: $openSans;
         font-size: 32px;
@@ -37,7 +40,6 @@ body{
         left: 0;
         bottom: 0;
         right: 100%;
-        border: 1px solid $mainColor;
         background: white;
         opacity: 0;
         transition: all .5s;

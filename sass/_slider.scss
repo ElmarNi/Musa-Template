@@ -27,11 +27,15 @@
                     }
                 }
             }
+            /*Scroll animation on center*/
             .scroll{
                 width: 30px;
                 height: 55px;
                 border: 2px solid $mainColor;
-                border-radius: 36%;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
                 position: relative;
                 padding: 7px;
                 .scroll-btn{
