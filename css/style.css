@@ -1,6 +1,7 @@
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  /*Changed container class of bootsrap 4*/
 }
 @media (min-width: 1200px) {
   body .container {
@@ -26,7 +27,7 @@ body h3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  color: #232323;
+  color: #2e2e2e;
   letter-spacing: 1px;
 }
 
@@ -74,6 +75,31 @@ body h3 {
 }
 .button-from-top:hover .overlay {
   bottom: 0;
+}
+
+/*p tag for section header contents*/
+.header-p {
+  letter-spacing: 1px;
+}
+.header-p::before {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: #00c9b1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header-p::after {
+  content: "";
+  height: 13px;
+  width: 13px;
+  background: #00c9b1;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
 }
 
 header {
@@ -211,29 +237,6 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 #feature {
   padding: 80px 0 40px 0;
 }
-#feature .container-fluid .container .content-row p {
-  letter-spacing: 1px;
-}
-#feature .container-fluid .container .content-row p::before {
-  content: "";
-  height: 2px;
-  width: 100px;
-  background: #00c9b1;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-}
-#feature .container-fluid .container .content-row p::after {
-  content: "";
-  height: 13px;
-  width: 13px;
-  background: #00c9b1;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-}
 #feature .container-fluid .container .box-row p {
   font-size: 13px;
 }
@@ -276,7 +279,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   }
 }
 #about-us {
-  padding: 100px 0;
+  padding: 100px 0 80px;
   background: #f6f6f6;
 }
 #about-us .container-fluid .container .row {
@@ -339,4 +342,179 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #about-us .container-fluid .container .row .progress-bar-div .progress .progress-bar span {
   font-size: 11px;
+}
+
+#professions {
+  padding: 100px 0 70px;
+}
+#professions .container-fluid .container .box-row {
+  /*Created hoverable class for boxes*/
+}
+#professions .container-fluid .container .box-row .icon {
+  transition: all 1s;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  display: inline-block;
+}
+#professions .container-fluid .container .box-row .icon i {
+  color: #00c9b1;
+  font-size: 30px;
+}
+#professions .container-fluid .container .box-row p {
+  font-size: 13px;
+}
+#professions .container-fluid .container .box-row .hover {
+  transition: all .4s ease 0s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+#professions .container-fluid .container .box-row .hover:hover {
+  transform: translateY(-10px);
+}
+#professions .container-fluid .container .box-row .hover:hover .icon {
+  transform: translateY(-10px);
+}
+
+#works {
+  padding: 100px 0 70px;
+  background: #f6f6f6;
+}
+#works .container-fluid .container .gallery-row {
+  /*Menu*/
+  /*hoverable for img*/
+  /*overlay for img*/
+}
+#works .container-fluid .container .gallery-row ul {
+  list-style: none;
+  padding: 0;
+  /*Added after and before for a layouts*/
+}
+#works .container-fluid .container .gallery-row ul li {
+  display: inline-block;
+  position: relative;
+  padding: 5px 0;
+  background: #ddd;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+#works .container-fluid .container .gallery-row ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 100%;
+  left: 0;
+  background: #00c9b1;
+  transition: all .4s;
+  z-index: 0;
+}
+#works .container-fluid .container .gallery-row ul li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: #00c9b1;
+  transition: all .4s;
+  z-index: 0;
+}
+#works .container-fluid .container .gallery-row ul li:hover a {
+  color: white;
+}
+#works .container-fluid .container .gallery-row ul li:hover::before {
+  bottom: 0%;
+}
+#works .container-fluid .container .gallery-row ul li:hover::after {
+  top: 0%;
+}
+#works .container-fluid .container .gallery-row ul li a {
+  position: relative;
+  color: #232323;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  z-index: 1;
+  padding: 5px 25px;
+  transition: all .4s;
+}
+#works .container-fluid .container .gallery-row ul li:first-child {
+  background: #00c9b1;
+}
+#works .container-fluid .container .gallery-row ul li:first-child a {
+  color: white;
+  /*three-angle*/
+}
+#works .container-fluid .container .gallery-row ul li:first-child a span {
+  background: #00c9b1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #00c9b1 #f6f6f6 #f6f6f6;
+}
+#works .container-fluid .container .gallery-row .hover {
+  overflow: hidden;
+  transition: all .4s;
+}
+#works .container-fluid .container .gallery-row .hover img {
+  transition: all .4s;
+}
+#works .container-fluid .container .gallery-row .hover:hover img {
+  transform: scale(1.1);
+}
+#works .container-fluid .container .gallery-row .hover:hover .overlay-gallery {
+  opacity: 1;
+  transform: scale(1);
+}
+#works .container-fluid .container .gallery-row .hover:hover .overlay-gallery .col-12 {
+  transform: scaleY(1);
+}
+#works .container-fluid .container .gallery-row .overlay-gallery {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  background: rgba(0, 201, 177, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: all .4s;
+  transform: scale(0.8);
+}
+#works .container-fluid .container .gallery-row .overlay-gallery .col-12 {
+  transform: scaleY(0.5);
+  transition: all .4s;
+}
+#works .container-fluid .container .gallery-row .overlay-gallery a i {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 25px;
+  color: #00c9b1;
+  background: white;
+  padding-top: 13px;
+  text-align: center;
+  transition: all .4s;
+}
+#works .container-fluid .container .gallery-row .overlay-gallery a i:hover {
+  transform: translateY(-5px);
+}
+#works .container-fluid .container .gallery-row .overlay-gallery h4 {
+  font-family: "Dosis", sans-serif;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#works .container-fluid .container .gallery-row .overlay-gallery p {
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  font-weight: 600;
 }
