@@ -671,3 +671,75 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
     display: none !important;
   }
 }
+
+#license {
+  background: #f6f6f6;
+  padding: 100px 0 80px;
+}
+#license .container-fluid .container .content-row {
+  /*hover class for all hovers and box-whadow,border-radius*/
+  /*static-hover class for medium div because this div look like a .hover class*/
+}
+#license .container-fluid .container .content-row p {
+  color: #232425;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#license .container-fluid .container .content-row h3, #license .container-fluid .container .content-row span {
+  font-family: "Dosis", sans-serif;
+  font-size: 48px;
+  color: #232425;
+  margin-bottom: -12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  transition: all .4s;
+}
+#license .container-fluid .container .content-row span {
+  transition-delay: .3s;
+}
+#license .container-fluid .container .content-row ul {
+  list-style: none;
+}
+#license .container-fluid .container .content-row ul li {
+  color: #2D3E50;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#license .container-fluid .container .content-row ul li i {
+  color: #00c9b1;
+  font-size: 13px;
+  transition: all .4s;
+  transition-delay: .3s;
+}
+#license .container-fluid .container .content-row .hover {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all .4s ease;
+}
+#license .container-fluid .container .content-row .hover:hover {
+  background: #00c9b1;
+}
+#license .container-fluid .container .content-row .hover:hover p, #license .container-fluid .container .content-row .hover:hover h3, #license .container-fluid .container .content-row .hover:hover span, #license .container-fluid .container .content-row .hover:hover li, #license .container-fluid .container .content-row .hover:hover i {
+  color: white;
+}
+#license .container-fluid .container .content-row .hover:hover button {
+  border-color: white;
+}
+#license .container-fluid .container .content-row .static-hover {
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #00c9b1;
+}
+#license .container-fluid .container .content-row .static-hover p, #license .container-fluid .container .content-row .static-hover h3, #license .container-fluid .container .content-row .static-hover span, #license .container-fluid .container .content-row .static-hover li, #license .container-fluid .container .content-row .static-hover i {
+  color: white;
+}
+#license .container-fluid .container .content-row .static-hover button {
+  border-color: white;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #license .cs-display {
+    display: none !important;
+  }
+}
