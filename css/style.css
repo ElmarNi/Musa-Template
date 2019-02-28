@@ -488,7 +488,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   transform: scale(0.8);
 }
 #works .container-fluid .container .gallery-row .overlay-gallery .col-12 {
-  transform: scaleY(0.5);
+  transform: scaleY(0.4);
   transition: all .4s;
 }
 #works .container-fluid .container .gallery-row .overlay-gallery a i {
@@ -517,4 +517,111 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   font-style: italic;
   color: white;
   font-weight: 600;
+}
+#works .container-fluid .container .works-info .content {
+  background: rgba(255, 255, 255, 0.7);
+}
+#works .container-fluid .container .works-info .content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #232323;
+}
+#works .container-fluid .container .works-info .content h3 {
+  color: #232323;
+  font-size: 16px;
+  font-weight: 600;
+}
+#works .container-fluid .container .works-info .content i {
+  color: #00c9b1;
+  font-size: 36px;
+}
+#works .container-fluid .container .works-info .col-md-6:nth-child(1) .bg-imgs {
+  background: url(../img/info.jpg);
+}
+#works .container-fluid .container .works-info .col-md-6:nth-child(2) .bg-imgs {
+  background: url(../img/info-2.jpg);
+}
+#works .container-fluid .container .works-info .col-md-6:nth-child(3) .bg-imgs {
+  background: url(../img/info3.jpg);
+}
+#works .container-fluid .container .works-info .col-md-6:nth-child(4) .bg-imgs {
+  background: url(../img/info-4.jpg);
+}
+
+#team {
+  padding: 100px 0 70px;
+}
+#team .container-fluid .container .team-content {
+  /*Hoverable class for hover*/
+  /*overlay class for overlay of img*/
+}
+#team .container-fluid .container .team-content .skew {
+  position: absolute;
+  bottom: -51px;
+  background: white;
+  width: 90%;
+  right: 0;
+  height: 78px;
+  transform: skewY(-13deg);
+  transition: all .4s;
+  transition-delay: .3s;
+}
+#team .container-fluid .container .team-content .hover {
+  transition: all .4s;
+}
+#team .container-fluid .container .team-content .hover:hover .overlay {
+  right: 0;
+  bottom: 0;
+}
+#team .container-fluid .container .team-content .hover:hover .overlay .icon {
+  opacity: 1;
+  transition-delay: .4s;
+}
+#team .container-fluid .container .team-content .hover:hover .skew {
+  opacity: 0;
+}
+#team .container-fluid .container .team-content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all .5s ease .1s;
+}
+#team .container-fluid .container .team-content .overlay .icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-52%);
+  opacity: 0;
+  transition-delay: 0s;
+}
+#team .container-fluid .container .team-content .overlay .icon a {
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 9px 10px;
+  transition: all .4s;
+  transition-delay: .5s;
+}
+#team .container-fluid .container .team-content .overlay .icon a:first-child {
+  padding: 9px 14px;
+}
+#team .container-fluid .container .team-content .overlay .icon a:hover {
+  border-color: #00c9b1;
+  background: #00c9b1;
+}
+#team .container-fluid .container .team-content .overlay .icon a i {
+  font-size: 16px;
+  color: #f6f6f6;
+}
+#team .container-fluid .container .team-content h2 {
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+}
+#team .container-fluid .container .team-content p {
+  color: #00c9b1;
+  font-style: italic;
+  border-bottom: 2px solid #00c9b1;
+  font-weight: 400;
 }
