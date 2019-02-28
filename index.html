@@ -19,7 +19,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <!--Header screens-->
+    <!--Header-->
     <header>
         <div class="container-fluid">
             <div class="container">
@@ -32,11 +32,11 @@
                     <div class="col-3 col-md-10 d-flex justify-content-end">
                         <!--Large screen Menu-->
                         <nav class="nav large-screen-nav">
-                            <a class="nav-link mr-3" href="#">Home</a>
-                            <a class="nav-link mr-3" href="#">About</a>
-                            <a class="nav-link mr-3" href="#">Service</a>
-                            <a class="nav-link mr-3" href="#">Portfolio</a>
-                            <a class="nav-link mr-3" href="#">Team</a>
+                            <a class="nav-link mr-3" href="#slider">Home</a>
+                            <a class="nav-link mr-3" href="#about-us">About</a>
+                            <a class="nav-link mr-3" href="#professions">Service</a>
+                            <a class="nav-link mr-3" href="#works">Portfolio</a>
+                            <a class="nav-link mr-3" href="#team">Team</a>
                             <a class="nav-link mr-3" href="#">Blog</a>
                             <a class="nav-link" href="#">Contact</a>
                         </nav>
@@ -46,11 +46,11 @@
                                 <i class="fas fa-bars" style="font-size:25px;"></i>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Home</a>
-                              <a class="dropdown-item" href="#">About</a>
-                              <a class="dropdown-item" href="#">Service</a>
-                              <a class="dropdown-item" href="#">Portfolio</a>
-                              <a class="dropdown-item" href="#">Team</a>
+                              <a class="dropdown-item" href="#slider">Home</a>
+                              <a class="dropdown-item" href="#about-us">About</a>
+                              <a class="dropdown-item" href="#professions">Service</a>
+                              <a class="dropdown-item" href="#works">Portfolio</a>
+                              <a class="dropdown-item" href="#team">Team</a>
                               <a class="dropdown-item" href="#">Blog</a>
                               <a class="dropdown-item" href="#">Contact</a>
                             </div>
@@ -521,7 +521,86 @@
             </div>
         </div>
     </section>
-    <!--Our Recent Works-->
+
+    <!--What Clients Say-->
+    <section id="clients">
+        <div class="container-fluid">
+            <div class="container">
+                <!--Header row-->
+                <div class="row justify-content-center header-row mb-5 pb-2">
+                    <div class="col-10 col-sm-8 col-md-11 col-lg-9 col-xl-7 px-5">
+                        <h2 class="text-center">What Clients Say</h2>
+                        <p class="text-center header-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsam nobis expedita enim provident ad reprehenderit modi!</p>
+                    </div>
+                </div>
+                <!--Content row-->
+                <div class="row clients-content justify-content-center position-relative">
+                    <div class="col-lg-4 col-sm-8 col-9 col-md-6 mb-3">
+                        <div class="col-12 text-center py-4 cs-shadow">
+                            <img src="img/client-1.jpg" class="rounded-circle mb-3">
+                            <div class="content">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia a reprehenderit recusandae architecto."</p>
+                            </div>
+                            <div class="foot">
+                                <h5 class="m-0 mb-2 pt-2">Lee Byung-Chul</h5>
+                                <p class="m-0">Founder</p>
+                                <p class="m-0">Samsung Group</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-8 col-9 col-md-6 mb-3">
+                        <div class="col-12 text-center py-4 cs-shadow">
+                            <img src="img/client-2.jpg" class="rounded-circle mb-3">
+                            <div class="content">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia a reprehenderit recusandae architecto."</p>
+                            </div>
+                            <div class="foot">
+                                <h5 class="m-0 mb-2 pt-2">Steve Jobs</h5>
+                                <p class="m-0">Founder</p>
+                                <p class="m-0">Apple</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--when max width 998px this div=none-->
+                    <div class="col-lg-4 cs-display mb-3">
+                        <div class="col-12 text-center py-4 cs-shadow">
+                            <img src="img/client-3.jpg" class="rounded-circle mb-3">
+                            <div class="content">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia a reprehenderit recusandae architecto."</p>
+                            </div>
+                            <div class="foot">
+                                <h5 class="m-0 mb-2 pt-2">Bill Gates</h5>
+                                <p class="m-0">Founder & CEO</p>
+                                <p class="m-0">Microsoft Corporation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Clients slider-->
+    <section id="clients-slider">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                   <div class="col-3 text-center">
+                        <img src="img/clients-slider.png" alt="" class="w-50" >
+                   </div>
+                   <div class="col-3 text-center">
+                        <img src="img/clients-slider-2.png" alt="" class="w-50" >
+                   </div>
+                   <div class="col-3 text-center">
+                        <img src="img/clients-slider-3.png" alt="" class="w-50" >
+                   </div>
+                   <div class="col-3 text-center cs-display">
+                        <img src="img/clients-slider-4.png" alt="" class="w-50" >
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
