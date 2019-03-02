@@ -17,6 +17,25 @@
 @import 'form';
 @import 'footer';
 
+.go-to-top{
+    background: #232323;
+    border-radius: 2px;
+    bottom: 25px;
+    position: fixed;
+    right: 25px;
+    border: none;
+    transition: all .4s;
+    padding: 4px 6px;
+    a{
+        padding: 7px 4px;
+        text-decoration: none;
+        color: white;
+    }
+    &:hover{
+        background: $mainColor;
+    }
+}
+
 
 
 

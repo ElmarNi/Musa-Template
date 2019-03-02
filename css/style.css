@@ -970,3 +970,22 @@ footer .container-fluid .container .icon a i {
   transition: all .4s;
   transition-delay: .6s;
 }
+
+.go-to-top {
+  background: #232323;
+  border-radius: 2px;
+  bottom: 25px;
+  position: fixed;
+  right: 25px;
+  border: none;
+  transition: all .4s;
+  padding: 4px 6px;
+}
+.go-to-top a {
+  padding: 7px 4px;
+  text-decoration: none;
+  color: white;
+}
+.go-to-top:hover {
+  background: #00c9b1;
+}
