@@ -871,7 +871,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 
 #form {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #form .container-fluid .container .row h3 {
   font-size: 28px;
@@ -915,4 +915,58 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #form .container-fluid .container .row textarea {
   padding-right: 25px;
+}
+
+footer {
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+}
+footer .container-fluid .container p {
+  color: #232323;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .container-fluid .container p a {
+  text-decoration: none;
+  color: #00c9b1;
+}
+footer .container-fluid .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .container-fluid .container ul li {
+  display: inline-block;
+}
+footer .container-fluid .container ul li a {
+  color: #232323;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .4s;
+}
+footer .container-fluid .container ul li a:hover {
+  color: #00c9b1;
+}
+footer .container-fluid .container .icon a {
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 9px 10px;
+  transition: all .4s;
+}
+footer .container-fluid .container .icon a:first-child {
+  padding: 9px 14px;
+}
+footer .container-fluid .container .icon a:hover {
+  border-color: #00c9b1;
+  background: #00c9b1;
+}
+footer .container-fluid .container .icon a:hover i {
+  color: #f6f6f6;
+}
+footer .container-fluid .container .icon a i {
+  font-size: 16px;
+  color: black;
+  transition: all .4s;
+  transition-delay: .6s;
 }
