@@ -1,5 +1,5 @@
 #form{
-    padding: 60px 0;
+    padding: 50px 0 70px;
     .container-fluid{
         .container{
             .row{
@@ -41,6 +41,7 @@
                     transition: all 0.3s ease 0s;
                     width: 100%;
                     outline: none;
+                    margin-left: 15px;
                     &:focus{
                         border-color: $mainColor;
                     }

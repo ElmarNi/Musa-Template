@@ -62,6 +62,10 @@
                         }
                         button{
                             border-color: white;
+                            background: white;
+                            a{
+                                color: $mainColor;
+                            }
                         }
                 }
             }

@@ -33,6 +33,7 @@ header{
                         transition: all .4s;
                         position: relative;
                         letter-spacing: 1px;
+                        margin-right: 20px;
                         &::after{
                             content: "";
                             width: 0px;

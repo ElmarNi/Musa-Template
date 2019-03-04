@@ -14,6 +14,7 @@ body h2 {
   font-weight: 600;
   line-height: 32px;
   color: #2e2e2e;
+  letter-spacing: 1px;
 }
 body p {
   font-family: "Open Sans", sans-serif;
@@ -133,6 +134,7 @@ header .container-fluid .container .row .large-screen-nav a {
   transition: all .4s;
   position: relative;
   letter-spacing: 1px;
+  margin-right: 20px;
 }
 header .container-fluid .container .row .large-screen-nav a::after {
   content: "";
@@ -163,7 +165,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   }
 }
 #slider {
-  padding: 40px 0;
+  padding: 167px 0;
   background: url(../img/1.jpg);
   background-position: center center;
   background-size: cover;
@@ -201,6 +203,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   border-bottom-right-radius: 30px;
   position: relative;
   padding: 7px;
+  bottom: -130px;
 }
 #slider .container-fluid .container .scroll .scroll-btn {
   border-radius: 100%;
@@ -245,7 +248,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   height: 50px;
   position: relative;
   background: black;
-  border-radius: 3px;
+  border-radius: 2px;
   top: -27px;
   left: 50%;
   transform: translateX(-50%);
@@ -279,13 +282,21 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   }
 }
 #about-us {
-  padding: 100px 0 80px;
+  padding: 100px 0 87px;
   background: #f6f6f6;
 }
 #about-us .container-fluid .container .row {
   /*icons with content*/
   /*icons without content*/
   /*customized bootstrap progress bar*/
+}
+#about-us .container-fluid .container .row h2 {
+  font-size: 30px;
+}
+#about-us .container-fluid .container .row h4 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
 }
 #about-us .container-fluid .container .row strong {
   color: #626262;
@@ -307,7 +318,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 #about-us .container-fluid .container .row .icon a {
   border: 2px solid black;
   border-radius: 2px;
-  padding: 9px 10px;
+  padding: 9px 12px;
   transition: all .4s;
 }
 #about-us .container-fluid .container .row .icon a:first-child {
@@ -328,6 +339,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #about-us .container-fluid .container .row .progress-bar-div p {
   color: #232323;
+  letter-spacing: 1px;
 }
 #about-us .container-fluid .container .row .progress-bar-div .progress {
   border-radius: 0px;
@@ -359,7 +371,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #professions .container-fluid .container .box-row .icon i {
   color: #00c9b1;
-  font-size: 30px;
+  font-size: 36px;
 }
 #professions .container-fluid .container .box-row p {
   font-size: 13px;
@@ -474,10 +486,10 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #works .container-fluid .container .gallery-row .overlay-gallery {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  left: 20px;
-  bottom: 20px;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
   background: rgba(0, 201, 177, 0.7);
   display: flex;
   justify-content: center;
@@ -557,14 +569,13 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #team .container-fluid .container .team-content .skew {
   position: absolute;
-  bottom: -51px;
+  bottom: -80px;
   background: white;
-  width: 90%;
-  right: 0;
+  width: 155%;
+  right: -15px;
   height: 78px;
-  transform: skewY(-13deg);
+  transform: skewY(-17deg);
   transition: all .4s;
-  transition-delay: .3s;
 }
 #team .container-fluid .container .team-content .hover {
   transition: all .4s;
@@ -578,7 +589,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   transition-delay: .4s;
 }
 #team .container-fluid .container .team-content .hover:hover .skew {
-  opacity: 0;
+  transform: skewY(0);
 }
 #team .container-fluid .container .team-content .overlay {
   position: absolute;
@@ -631,7 +642,26 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   padding: 80px 0 100px;
 }
 #clients .container-fluid .container .clients-content {
+  /*Left and right arrows*/
   /*Custom shadow*/
+}
+#clients .container-fluid .container .clients-content:hover .fa-long-arrow-alt-left, #clients .container-fluid .container .clients-content:hover .fa-long-arrow-alt-right {
+  opacity: 1;
+}
+#clients .container-fluid .container .clients-content .fa-long-arrow-alt-left, #clients .container-fluid .container .clients-content .fa-long-arrow-alt-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #00c9b1;
+  transition: all .4s;
+  opacity: 0;
+}
+#clients .container-fluid .container .clients-content .fa-long-arrow-alt-left {
+  left: -20px;
+}
+#clients .container-fluid .container .clients-content .fa-long-arrow-alt-right {
+  right: -20px;
 }
 #clients .container-fluid .container .clients-content .cs-shadow {
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
@@ -662,6 +692,12 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 
 #clients-slider {
   padding: 60px 0;
+}
+#clients-slider .container-fluid .container .row img {
+  transition: all .4s;
+}
+#clients-slider .container-fluid .container .row img:hover {
+  transform: scale(1.06);
 }
 @media (max-width: 992px) {
   #clients-slider img {
@@ -737,6 +773,10 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 #license .container-fluid .container .content-row .static-hover button {
   border-color: white;
+  background: white;
+}
+#license .container-fluid .container .content-row .static-hover button a {
+  color: #00c9b1;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   #license .cs-display {
@@ -871,7 +911,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
 }
 
 #form {
-  padding: 60px 0;
+  padding: 50px 0 70px;
 }
 #form .container-fluid .container .row h3 {
   font-size: 28px;
@@ -909,6 +949,7 @@ header .container-fluid .container .row .large-screen-nav a:hover::after {
   transition: all 0.3s ease 0s;
   width: 100%;
   outline: none;
+  margin-left: 15px;
 }
 #form .container-fluid .container .row input:focus, #form .container-fluid .container .row textarea:focus {
   border-color: #00c9b1;
@@ -935,6 +976,7 @@ footer .container-fluid .container ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 footer .container-fluid .container ul li {
   display: inline-block;
